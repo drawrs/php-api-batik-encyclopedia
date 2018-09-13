@@ -46,3 +46,9 @@ API for show articles of Batik encyclopedia. The articles is from wikipedia..
 		</tr>
 	</tbody>
 </table>
+
+<p>Project Android studionya : <a href="https://github.com/drawrs/kotlin-batik-encyclopedia">https://github.com/drawrs/kotlin-batik-encyclopedia</a></p>
+<p>
+	<br>
+</p>
+
