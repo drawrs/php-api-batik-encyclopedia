@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Sep 13, 2018 at 09:46 AM
+-- Server version: 5.6.38
+-- PHP Version: 7.2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db_encyclopedia_batik`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `articles`
+--
+
+CREATE TABLE `articles` (
+  `id` int(10) NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `poster` varchar(200) NOT NULL,
+  `writer` varchar(100) NOT NULL,
+  `post_content` longtext NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `articles`
+--
+
+INSERT INTO `articles` (`id`, `title`, `poster`, `writer`, `post_content`, `created_at`) VALUES
+(1, 'Batik Pekalongan', 'batik_pekalongan.jpg', 'Rizal Hilman', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\"><strong>B<span style=\"color: rgb(0, 0, 0);\">atik Pekalongan</span></strong> termasuk batik yang terkenal di Indonesia, bahkan hingga mancanegara sudah mengenal jenis batik dari daerah ini. Ada salah satu daerah yang dijuluki sebagai Kampung Batik Indonesia maka itu adalah Kota Pekalongan. Batik Pekalongan merupakan Batik Pesisir yang paling kaya akan warna. Batik Pekalongan menggambarkan ciri kehidupan masyarakat pesisir yang mudah beradaptasi pengaruh budaya luar dan juga mampu mengadaptasi pengaruh Batik Pedalaman.</span>\r\n</p>\r\n\r\n<p style=\"line-height: 1.5\"><img src=\"https://s3-eu-west-1.amazonaws.com/froala-eu/temp_files%2F1536727076647-1536727076647.jpeg\" width=\"100%\" class=\"fr-fic fr-dib\"></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia,serif;\">Secara filosofi, para pengrajin Batik Pekalongan telah menempatkan hiasan keramik Tiongkok sebagai manifestasi ikatan kebudayaan leluhur yang dalam lukisannya memiliki kefasihan dan kelembutan. Pemilihan ragam hias jenis tumbuhan yang sebagian besar menjadi objek utama dan banyak terdapat pada lukisan keramik Tiongkok.</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia,serif;\">Selain itu ragam hias batik Pekalongan yang berbentuk binatang seperti burung pipit, burung merak, ular naga dan kupu-kupu turut melengkapi ragam hias tumbuhan. Pola-pola batik untuk kepentingan peribadatan mengadaptasi ragam-ragam hias bentuk-bentuk manusia dewa dalam kerajaan langit sesuai kepercayaam agama leluhur yang disebut Tok-Wi (Jenis batik yang digunakan untuk alas altar persembahyangan) orang Tionghoa.</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia,serif;\">Pengaruh batik Cirebon pada perkembangan Batik Pekalongan juga nampak pada penghargaan yang diberikan keraton Cirebon terhadap Batik Pekalongan khususnya oleh kalangan ningrat Tionghoa. Penghargaan keraton Cirebon terhadap Batik Pekalongan nampaknya bukan hanya disebabkan oleh ragam hias dari keramik dinasti Ming namun juga disebabkan oleh ciri khas Batik Pekalongan yaitu cara pembuatan yang berbeda dengan cara pembuatan batik di daerah lain khususnya pada masa itu.</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><strong><span style=\"font-size: 18px;\">Motif Batik Tujuh Rupa</span></strong></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-size: 14px;\"><a href=\"https://infobatik.id/\"><span style=\"font-family: Georgia,serif;\">Motif Batik Tujuh Rupa</span></a><span style=\"font-family: Georgia,serif;\"> sangat kental dengan nuansa alam. Sehingga umumnya batik pekalogan menampilkan bentuk&nbsp;<a href=\"https://news.okezone.com/read/2017/10/01/337/1786637/hari-batik-nasional-ini-sepuluh-motif-batik-populer-dari-berbagai-daerah\">motif&nbsp;</a>bergambar hewan atau tumbuhan. Motif-motif tersebut diambil dari berbagai campuran kebudayaan lokal dan etnis cina. Sebab dahulunya Pekalongan adalah tempat transit para pedagang dari berbagai negara. Sehingga akulturasi budaya itulah yang membuat Batik Pekalongan sangat khas, khususnya Motif Jlamprang, Motif Buketan, Motif Terang Bulan, Motif Semen, Motif Pisan Bali dan Motif Lung-Lungan.</span></span>\r\n</p>\r\n', '2018-09-12 04:43:51'),
+(2, 'Batik Mega Mendung', 'mega_mendung.JPG', 'Rizal Hilman', '<p style=\"line-height: 1.5\"><strong><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif</span><span style=\"font-size: 14px;\"><span style=\"font-family: Georgia,serif;\">&nbsp;batik Megamendung</span></span></strong><span style=\"font-family: Georgia, serif; font-size: 14px;\">&nbsp;merupakan karya seni batik yang identik dan bahkan menjadi ikon batik daerah Cirebon dan daerah Indonesia lainnya. Motif batik ini mempunyai kekhasan yang tidak ditemui di daerah penghasil batik lain. Bahkan karena hanya ada di Cirebon dan merupakan masterpiece, Departemen Kebudayaan dan Pariwisata akan mendaftarkan motif megamendung ke <strong>UNESCO</strong> untuk mendapatkan pengakuan sebagai salah satu warisan dunia.</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><img src=\"https://s3-eu-west-1.amazonaws.com/froala-eu/temp_files%2F1536727825522-1536727825522.png\" class=\"fr-fic fr-dib\" style=\"width: 100%;\"></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif megamendung sebagai motif dasar batik sudah dikenal luas sampai ke manca negara. Sebagai bukti ketenarannya, motif megamendung pernah dijadikan cover sebuah buku batik terbitan luar negeri yang berjudul <em>Batik Design</em>, karya seorang berkebangsaan <strong>Belanda</strong> bernama Pepin van Roojen.&nbsp;</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Kekhasan motif megamendung tidak saja pada motifnya yang berupa gambar menyerupai awan dengan warna-warna tegas, tetapi juga nilai-nilai filosofi yang terkandung di dalam motifnya. Hal ini berkaitan erat dengan sejarah lahirnya batik secara keseluruhan di Cirebon. H. Komarudin Kudiya S.IP, M.Ds, <em>Ketua Harian Yayasan Batik Jawa Barat (YBJB)</em> menyatakan bahwa:</span></p>\r\n\r\n<blockquote>\r\n\r\n    <p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif megamendung merupakan wujud karya yang sangat luhur dan penuh makna, sehingga penggunaan motif megamendung sebaiknya dijaga dengan baik dan ditempatkan sebagaimana mestinya. Pernyataan ini tidak bermaksud membatasi bagaimana motif megamendung diproduksi, tapi lebih kepada ketidaksetujuan penggunaan motif megamendung untuk barang-barang yang sebenarnya kurang pantas, seperti misalnya pelapis sandal di hotel-hotel.</span></p>\r\n</blockquote>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 18px;\">Sejarah Motif</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Sejarah timbulnya motif megamendung berdasarkan buku dan literatur yang ada selalu mengarah pada sejarah kedatangan bangsa China ke wilayah Cirebon. Hal ini tidak mengherankan karena pelabuhan <a href=\"https://id.wikipedia.org/w/index.php?title=Muara_Jati&action=edit&redlink=1\" title=\"Muara Jati (halaman belum tersedia)\">Muara Jati</a> di Cirebon merupakan tempat gue persinggahan para pendatang dari dalam dan luar negeri. Tercatat jelas dalam sejarah, bahwa&nbsp;<a href=\"https://id.wikipedia.org/wiki/Sunan_Gunung_Jati\" title=\"Sunan Gunung Jati\">Sunan Gunung Jati</a> yang menyebarkan agama&nbsp;<a href=\"https://id.wikipedia.org/wiki/Islam\" title=\"Islam\">Islam</a> di wilayah Cirebon pada abad ke-16, menikahi&nbsp;<a href=\"https://id.wikipedia.org/w/index.php?title=Ratu_Ong_Tien&action=edit&redlink=1\" title=\"Ratu Ong Tien (halaman belum tersedia)\">Ratu Ong Tien</a> dari China. Beberapa benda seni yang dibawa dari China seperti keramik, piring dan kain berhiaskan bentuk awan.</span></p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-size: 14px;\"><span style=\"font-family: Georgia,serif;\">Dalam paham&nbsp;<a href=\"https://id.wikipedia.org/wiki/Taoisme\" title=\"Taoisme\">Taoisme</a>, bentuk awan melambangkan dunia atas. Bentuk awan merupakan gambaran dunia luas, bebas dan mempunyai makna transidental (Ketuhanan). Konsep mengenai awan juga berpengaruh di dunia kesenirupaan Islam pada abad ke-16, yang digunakan kaum&nbsp;<a href=\"https://id.wikipedia.org/wiki/Sufi\" title=\"Sufi\">Sufi</a> untuk ungkapan dunia besar atau alam bebas.</span></span>\r\n</p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-size: 14px;\"><span style=\"font-family: Georgia,serif;\">Pernikahan Sunan Gunung Jati dengan Ratu Ong Tien menjadi pintu gerbang masuknya budaya dan tradisi China ke keraton Cirebon. Para pembatik keraton menuangkan budaya dan tradisi China ke dalam motif batik yang mereka buat, tetapi dengan sentuhan khas Cirebon, jadi ada perbedaan antara motif megamendung dari China dan yang dari Cirebon. Misalnya, pada motif megamendung China, garis awan berupa bulatan atau lingkaran, sedangkan yang dari Cirebon, garis awan, lancip dan segitiga.</span></span>\r\n</p>\r\n\r\n<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Sejarah batik di Cirebon juga terkait dengan perkembangan gerakan tarekat yang konon berpusat di&nbsp;<a href=\"https://id.wikipedia.org/wiki/Banjarmasin\" title=\"Banjarmasin\">Banjarmasin</a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Kalimantan_Selatan\" title=\"Kalimantan Selatan\">Kalimantan Selatan</a>. Membatik pada awalnya dikerjakan oleh anggota tarekat yang mengabdi di keraton sebagai sumber ekonomi untuk membiayai kelompok tarekat tersebut. Para pengikut tarekat tinggal di desa Trusmi dan sekitarnya. Desa ini terletak kira-kira 4&nbsp;km dari Cirebon menuju ke arah barat daya atau menuju ke arah&nbsp;<a href=\"https://id.wikipedia.org/wiki/Bandung\" title=\"Bandung\">Bandung</a>. Oleh karena itu, sampai sekarng batik Cirebon identik dengan batik&nbsp;<a href=\"https://id.wikipedia.org/w/index.php?title=Trusmi&action=edit&redlink=1\" title=\"Trusmi (halaman belum tersedia)\">Trusmi</a>.</span></p>\r\n', '2018-09-12 04:56:20'),
+(3, 'Batik Keraton', 'batik_keraton.jpg', 'Dimas Kuncoro', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif batik Keraton berasal dari kebudayaan jawa yang kental dengan sistem kekeratonan dan kesultanannya. Batik keraton ini melambangkan kearifan, kebijaksanaan, dan juga kharisma raja-raja jawa. Dulunya, batik asal Yogya ini hanya boleh dipakai warga keraton saja, namun sekarang sudah umum dipakai siapa saja. Ciri motif batik Keraton adalah motif bunga yang simetris atau saya burung yang dikenal sebagai motif sawat lar. Motif ini bisa dibilang paling banyak dipakai baik oleh orang Indonesia maupun orang luar negeri.</span></p>\r\n', '2018-09-12 08:05:55'),
+(4, 'Batik Simbut', 'batik_simbut.png', 'Sinta Dewi', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif batik Simbut berbentuk daun yang menyeruai daun talas. Motif tersebut merupakan motif yang paling sederhana, hanya menyusun dan merapikan satu jenis motif saja. Motif Simbut berasal dari suku  Badui pedalaman di Sunda yang kental dengan peradaban lama. Namun, seiring dengan berjalannya waktu, para penduduk badui yang menerima modernitas mengembangkan batik ini di daerah pesisir Banten. Sehngga batik motif Simbut dikenal juga dengan batik Banten.</span></p>\r\n', '2018-09-12 08:05:55'),
+(5, 'Motif Parang', 'batik_parang.jpg', 'Dewi Andari', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Parang berasal dari kata pereng atau miring. Bentuk motifnya berbentuk seperti huruf “S” miring berombak memanjang.Motif Parang ini tersebar di seluruh Jawa, mulai dari Jawa Tegah, Jogjakarta dan Jawa Barat. Biasanya, perbedaannya hanya terletak pada aksen dari batik Motif parang tersebut. Misalkan, di Jogja ada motif Parang Rusak dan Parang Barong, di Jawa Tengah ada Parang Slobog, serta di Jawa Barat ada Parang Klisik.</span></p>\r\n', '2018-09-12 08:08:54'),
+(6, 'Motif Kawung', 'batik_kawung.jpg', 'Dewi Andari', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Batik ini terinspirasi dari bentuk buah kolang kaling. Bentuk kolang kaling yang lonjong tersebut disusun empat sisi membentuk lingkaran. Motif Kuwung sering diidentikan dengan motif sepuluh sen kuno, karena bentuknya yang bulat dengan lubang ditengahnya. Motif ini berasal dan berkembang di Jawa Tengah dan Jogjakarta. Biasanya motifnya sama, hanya bedanya pada hiasan atau aksennya saja. Batik ini juga termasuk motif batik Indonesia yang paling banyak dipakai.</span></p>\r\n', '2018-09-12 08:08:54'),
+(7, 'Batik Pring Sedapur', 'batik_sedapur.jpg', 'Rizal Hilman', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif batik Pring Sedapur memiliki ciri khas yang simpel namun elegan. Motif yang dipakai adalah motif bambu, sehingga sering juga disebut sebagai batik Pring. Batik ini tidak hanya indah dalam kesederhanaan motifnya, tetapi memiliki filosofi yang sederhana pula. Dimana bambu memberikan makna ketentraman, keteduhan dan kerukunan. Selain itu, bambu/pring juga mempunyai filosofi mendalam bagi orang Jawa, yakni apa saja dalam diri kita haruslah memberikan manfaat bagi orang lain, sejak lahir sampai mati.</span></p>\r\n', '2018-09-12 08:11:42'),
+(8, 'Batik Gentongan', 'batik_gentongan.jpg', 'Rizal Hilman', '<p style=\"line-height: 1.5\"><span style=\"font-family: Georgia, serif; font-size: 14px;\">Motif Gentongan berbeda dengan batik lainnya. Batik asal madura ini menggunakan motif abstrak sederhana, tanaman atau kombinasi keduanya. Warna batik Gentongan biasanya mengambil warna terang seperti merah, kuning, hijau, atau ungu. Batik Gentongan sendiri diambil dari gentong, yakni gerabah yang dipakai sebagai wadah untuk mencelup kain batik pada cairan warna.</span></p>\r\n', '2018-09-12 08:12:29');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `articles`
+--
+ALTER TABLE `articles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `articles`
+--
+ALTER TABLE `articles`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
